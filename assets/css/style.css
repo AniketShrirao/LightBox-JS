@@ -131,7 +131,8 @@ header {
   transition: all 0.3s ease;
  }
 
-.posts figcaption {
+ .posts figcaption,
+.figureText {
   padding: 10px;
   display: block;
   font-size: 21px;
@@ -141,6 +142,9 @@ header {
   background: goldenrod;
     color: darkgreen;
 }
+
+.display { display: flex; }
+.none { display: none; }
 
 .LightBox {
   display: none;
@@ -165,9 +169,8 @@ header {
   opacity: 0.3;
   cursor: pointer;
 }
-.close:hover {
-  opacity: 1;
-}
+.close:hover { opacity: 1;}
+
 .close:before, .close:after {
   position: absolute;
   left: 15px;
@@ -176,12 +179,8 @@ header {
   width: 2px;
   background-color: #fff;
 }
-.close:before {
-  transform: rotate(45deg);
-}
-.close:after {
-  transform: rotate(-45deg);
-}
+.close:before { transform: rotate(45deg); }
+.close:after { transform: rotate(-45deg); }
 
 /*=================================
   Header styling ends here
