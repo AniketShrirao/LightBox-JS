@@ -9,9 +9,10 @@ var postarray = Array.from(Posts);
 
 Lightbox.appendChild(close);
 close.classList.add('close');
-
+var i = 0;
 for (var post in postarray) {
-  postarray[post].addEventListener('click',lightbox);
+  postarray[i].addEventListener('click',lightbox);
+  i++;
 }
 
 function lightbox(){
@@ -20,12 +21,12 @@ function lightbox(){
   var currentImg = this.children[0].children[0];
   var url = currentImg.src; 
 
-  Lightbox.classList.add('display');
+  Lightbox.classList.add('visible');
   imageinsideLightbox.setAttribute('src',url);
-  figcaption.classList.add('figureText');
+  figcaption.classList.add('class','figureText');
   figcaption.innerHTML = this.innerText;
 };
 
 close.addEventListener('click', function(){
-  Lightbox.classList.add('none');
+  Lightbox.classList.add('class','hidden');
 });
