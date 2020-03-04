@@ -118,6 +118,14 @@ header {
   justify-content: center;
 }
 
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+
 .posts {
   margin: 34px;
   display: flex;
@@ -128,6 +136,7 @@ header {
 .posts li {
   width: 30%;
   margin-bottom: 27px;
+  cursor: pointer;
   transition: all 0.3s ease;
  }
 
@@ -187,48 +196,12 @@ header {
   transition: all 0.3s ease;
 }
 
+.posts li:hover { box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2), 0 10px 30px 0 rgba(0,0,0,0.19); }
 .noscroll { overflow: hidden; }
 .close:hover { opacity: 1;}
 .close:before { transform: rotate(45deg); }
 .close:after { transform: rotate(-45deg); }
 
 /*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
-  main styling starts here
-=================================*/
-
-
-
-
-
-
-
-
-/*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
