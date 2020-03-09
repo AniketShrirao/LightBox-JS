@@ -50,6 +50,7 @@ function LightBox(html,Posts,Lightbox,imageinsideLightbox,close) {
   Lightbox.addEventListener('click',function(e){
     if (e.target.classList.contains("LightBox")) {
       Lightbox.classList.add('hidden');
+      html.classList.remove('noscroll');
     }
   });
 }
