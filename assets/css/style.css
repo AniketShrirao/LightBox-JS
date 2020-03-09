@@ -167,6 +167,27 @@ header {
   transition: all 0.3s ease;
 }
 
+.LightBox li{
+  position: relative;
+  top: 0;
+  opacity: 1;
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    top: -50%;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .close {
   position: absolute;
   right: 32px;
